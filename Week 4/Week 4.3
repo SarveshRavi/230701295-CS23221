@@ -1,0 +1,19 @@
+a=int(input())
+sum=0
+count=0
+b=int(a)
+d=a
+e=0
+while(b!=0):
+  count+=1
+  b=int(b/10)
+while(count!=0):
+  e=d%10
+  sum+=e**count
+  count-=1
+  d=int(d/10)
+if(a==sum):
+  print("Yes")
+else:
+  print("No")
+  

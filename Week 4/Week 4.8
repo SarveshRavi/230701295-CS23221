@@ -1,0 +1,20 @@
+a=int(input(""))
+lst=[]
+c=a
+d=0
+while(c!=0):
+  d=c%10
+  lst.append(d)
+  c=int(c/10)
+e=a
+y=0
+while(e!=0):
+  d=e%10
+  k=0
+  for i in lst:
+    if(d==1):
+      k+=1
+  if(k==1):
+    y+=1
+  e=int(e/10)
+print(y)  
